@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  php-app:
+    build: .
+    container_name: php_app
+    ports:
+      - "8080:80"
+    restart: always
