@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/back-login4.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+.form-check-label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 15px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .form-check {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .table {
+        overflow-x: auto; /* Hacer que la tabla sea desplazable horizontalmente en pantallas pequeñas */
+        -webkit-overflow-scrolling: touch; /* Mejor para dispositivos táctiles */
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem; /* Reducir el tamaño de fuente para mejorar la legibilidad */
+        padding: 10px; /* Reducir el padding */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reducir tamaño del título en pantallas más pequeñas */
+    }
+
+    .form-check-label {
+        font-size: 0.9rem; /* Reducir el tamaño de fuente de los labels */
+    }
+}
+
+/* Para pantallas aún más pequeñas, como teléfonos en modo vertical */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Ajuste aún más pequeño */
+    }
+
+    .table th, .table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Ajuste el tamaño del botón */
+    }
+}
